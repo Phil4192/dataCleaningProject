@@ -33,13 +33,17 @@ y_train.txt
 
 
 subject_test, subject_train = person being measured  (there were 30 people in all.  distinct set in each file)
+
 y_test, y_train = activities performed in x_test, X_train represented by a number [1:6] (the contents of y_test matches activity labels)
+
 X_test and X_train = the feature data (as described in the documentation)
 
 features.txt maps feature number (varaible) to a textula name
+
 activity_labels.txt mapps numbers (1:6) to textual descriptions of the activity
 
 The function will save both the 1st and 2nd data frames as tidyData.txt and mTidyData.txt respectively
+
 The function will will return the mTidyData data frame.
 
  

@@ -35,7 +35,7 @@ y_train.txt
 subject_test, subject_train = person being measured  (there were 30 people in all.  distinct set in each file)
 y_test, y_train = activities performed in x_test, X_train represented by a number [1:6] (the contents of y_test matches activity labels)
 X_test and X_train = the feature data (as described in the documentation)
-the column labels and you will want to draw on their description of the data for writing your codebook.
+
 features.txt maps feature number (varaible) to a textula name
 activity_labels.txt mapps numbers (1:6) to textual descriptions of the activity
 

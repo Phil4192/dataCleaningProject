@@ -16,13 +16,21 @@ run_analysis will read the 8 files below that will be used to construct and save
 the 2nd data frame is a tidy data frame with the average over combinations of Subject and Activity:
 
 activity_labels.txt
+
 features.txt
+
 subject_test.txt
+
 subject_train.txt
+
 X_test.txt
+
 X_train.txt
+
 y_test.txt
+
 y_train.txt
+
 
 subject_test, subject_train = person being measured  (there were 30 people in all.  distinct set in each file)
 y_test, y_train = activities performed in x_test, X_train represented by a number [1:6] (the contents of y_test matches activity labels)

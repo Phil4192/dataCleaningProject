@@ -28,21 +28,37 @@ These signals were used to estimate variables of the feature vector for each pat
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
+
 tGravityAcc-XYZ
+
 tBodyAccJerk-XYZ
+
 tBodyGyro-XYZ
+
 tBodyGyroJerk-XYZ
+
 tBodyAccMag
+
 tGravityAccMag
+
 tBodyAccJerkMag
+
 tBodyGyroMag
+
 tBodyGyroJerkMag
+
 fBodyAcc-XYZ
+
 fBodyAccJerk-XYZ
+
 fBodyGyro-XYZ
+
 fBodyAccMag
+
 fBodyAccJerkMag
+
 fBodyGyroMag
+
 fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
@@ -102,8 +118,10 @@ Units are normalized to +/-1 of full scale range
 [48] "fBodyBodyGyroJerkMagMeanFreqAve"     
 [49] "angletBodyAccMeangravityAve"         
 [50] "angletBodyAccJerkMeangravityMeanAve" 
+
 [51] "angletBodyGyroMeangravityMeanAve"    
 [52] "angletBodyGyroJerkMeangravityMeanAve"
+
 [53] "angleXgravityMeanAve"                
 [54] "angleYgravityMeanAve"                
 [55] "angleZgravityMeanAve"                

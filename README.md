@@ -47,6 +47,8 @@ The function will save both the 1st and 2nd data frames as tidyData.txt and mTid
 The function will will return the mTidyData data frame.
 
 *Comment: Note that I get 180 objects and 88 vars if I keep anything with a "mean" or a "std" in it.  
-But only 68 if I keep anything with "mean()" or a "std()" in it. 
-I think the intent is to get the result with 68 vars, but why risk it.  
-It should be OK to have a few extra variables, but would not want some to be missing....*
+But only 68 if I keep anything with "-mean()" or a "-std()" in it. 
+I think the intent is to get the result with 68 vars when reading step 3 closely.  
+ie, the function 'mean()' or 'std()' should have been applied to the data and
+be indicated in var name.
+(If there was a clear mission or goal to this, it would be clearer how much data to keep.)*

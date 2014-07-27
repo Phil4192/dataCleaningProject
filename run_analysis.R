@@ -30,22 +30,24 @@ run_analysis <- function(){
     
     #### load each needed files to an R object ####
     featureMap <- read.table("features.txt")
-    featureMap[,2] <- gsub("[[:punct:]]", "", featureMap[,2]) # remove puntuation chars from var names
     featureMap[,2] <- gsub("mean", "Mean", featureMap[,2]) # make 1st letter of mean and std caps
     featureMap[,2] <- gsub("std", "Std", featureMap[,2])
     activityMap <- read.table("activity_labels.txt")  #how to map number to activity
-    
+
     #### for test data  ####
     sensorsTest <- read.table("X_test.txt")
-    names(sensorsTest) <- featureMap[,2]  #replace names with meaningful names
     subjectTest <- read.table("subject_test.txt")
     
-    # keep only mean and std data:
-    meanListTest <- grep("Mean", featureMap[,2])
-    stdListTest <- grep("Std", featureMap[,2])
+    # keep only measurements that have mean() or std() applied to them appears as -mean() or -std() in the var name:
+    meanListTest <- grep("-Mean\\(\\)", featureMap[,2])
+    stdListTest <- grep("-Std\\(\\)", featureMap[,2])
     keepListTest <- c(meanListTest,stdListTest)
     sensorsTest <- sensorsTest[, keepListTest]
-    
+    #replace names with meaningful names and remove punctuations chars
+    sensorsTestNames <- featureMap[keepListTest,2]  
+    sensorsTestNames <- gsub("[[:punct:]]", "", sensorsTestNames)
+    names(sensorsTest) <- sensorsTestNames
+
     # add action col 
     sensorsTestActNum <- read.table("y_test.txt")
     sensorTestActName <- activityMap[sensorsTestActNum[, 1], 2]
@@ -58,14 +60,17 @@ run_analysis <- function(){
     
     #### for train data  ####
     sensorsTrain <- read.table("X_train.txt")
-    names(sensorsTrain) <- featureMap[,2]  #replace names with meaningful names
     subjectTrain <- read.table("subject_train.txt")
     
-    # keep only mean and std data:
-    meanListTrain <- grep("Mean", featureMap[,2])
-    stdListTrain <- grep("Std", featureMap[,2])
+    # keep only measurements that have mean() or std() applied to them appears as -mean() or -std() in the var name:
+    meanListTrain <- grep("-Mean\\(\\)", featureMap[,2])
+    stdListTrain <- grep("-Std\\(\\)", featureMap[,2])
     keepListTrain <- c(meanListTrain,stdListTrain)
     sensorsTrain <- sensorsTrain[, keepListTrain]
+    #replace names with meaningful names and remove punctuations chars
+    sensorsTrainNames <- featureMap[keepListTrain,2]  
+    sensorsTrainNames <- gsub("[[:punct:]]", "", sensorsTrainNames)
+    names(sensorsTrain) <- sensorsTrainNames
     
     # add action col 
     sensorsTrainActNum <- read.table("y_train.txt")

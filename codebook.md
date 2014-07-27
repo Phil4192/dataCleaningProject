@@ -7,20 +7,16 @@ then processing that data into a tidy data frame.  the processing is averaging t
 There are two variable to indicate the ID of the Subject (person) and the Activity of the subject
 
  [1] "Subject"
-       ID of person (1:30)
+        ID of person [1:30]
+
  
  [2] "Activity" 
-  		WALKING
-  		
-		WALKING_UPSTAIRS
-		
-		WALKING_DOWNSTAIRS
-		
-		SITTING
-		
-		STANDING
-		
-		LAYING 
+* WALKING		
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING 
 
 ## Measurement data (features)
 Data is averaged data.  The averaging is over each combination of Subject and Activity
@@ -108,9 +104,11 @@ Units are normalized to +/-1 of full scale range
 [30] "fBodyGyroMeanYAve"          
 [31] "fBodyGyroMeanZAve"          
 [32] "fBodyAccMagMeanAve"         
-[33] "fBodyBodyAccJerkMagMeanAve" 
+[33] "fBodyBodyAccJerkMagMeanAve"
+ 
 [34] "fBodyBodyGyroMagMeanAve"    
 [35] "fBodyBodyGyroJerkMagMeanAve"
+
 [36] "tBodyAccStdXAve"            
 [37] "tBodyAccStdYAve"            
 [38] "tBodyAccStdZAve"            

@@ -4,17 +4,22 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 then processing that data into a tidy data frame.  the processing is averaging the data over each combination of Subject and Activity
 
 ## ID data
-there are two variable to indicate the ID of the Subject (person) and the Activity of the subject
+There are two variable to indicate the ID of the Subject (person) and the Activity of the subject
 
- [1] "Subject"                             
- 		ID of person (1:30)
+ [1] "Subject"
+       ID of person (1:30)
  
  [2] "Activity" 
- 		WALKING
+  		WALKING
+  		
 		WALKING_UPSTAIRS
+		
 		WALKING_DOWNSTAIRS
+		
 		SITTING
+		
 		STANDING
+		
 		LAYING 
 
 ## Measurement data (features)

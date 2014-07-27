@@ -6,11 +6,10 @@ then processing that data into a tidy data frame.  the processing is averaging t
 ## ID data
 There are two variable to indicate the ID of the Subject (person) and the Activity of the subject
 
- [1] "Subject"
+[1] "Subject"
 * ID of person [1:30]
 
- 
- [2] "Activity" 
+[2] "Activity" 
 * WALKING		
 * WALKING_UPSTAIRS
 * WALKING_DOWNSTAIRS

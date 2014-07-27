@@ -106,6 +106,7 @@ Units are normalized to +/-1 of full scale range
 [33] "fBodyBodyAccJerkMagMeanAve"  
 [34] "fBodyBodyGyroMagMeanAve"    
 [35] "fBodyBodyGyroJerkMagMeanAve" 
+
 [36] "tBodyAccStdXAve"            
 [37] "tBodyAccStdYAve"            
 [38] "tBodyAccStdZAve"            
